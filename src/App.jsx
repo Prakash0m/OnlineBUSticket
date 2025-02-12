@@ -3,6 +3,8 @@ import React from "react";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/hero/Home";
 import About from "./pages/about/About";
+import Footer from "./components/navbar/Footer";
+import Tickets from "./pages/hero/Tickets";
 
 function App() {
   return (
@@ -15,9 +17,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/bus-tickets" element={<Tickets />} />
           </Routes>
           {/* Footer */}
-          <footer>This is a footer</footer>
+          <Footer />
         </main>
       </Router>
     </>

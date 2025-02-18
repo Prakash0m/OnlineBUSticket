@@ -5,6 +5,7 @@ import Home from "./pages/hero/Home";
 import About from "./pages/about/About";
 import Footer from "./components/navbar/Footer";
 import Tickets from "./pages/hero/Tickets";
+import { Detail } from "./pages/hero/Detail";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/tickets" element={<Tickets />} />
+            {/* Details */}
+            <Route path="/support-team" element={<Detail />} />
           </Routes>
           {/* Footer */}
           <Footer />

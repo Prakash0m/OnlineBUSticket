@@ -18,10 +18,11 @@ const TicketCard = ({
 }) => {
   return (
     <div>
-      <div className="w-full rounded-xl p-5 border-2 border-neutral-300 space-y-10 ">
+      <div className="w-full rounded-xl p-5 border-2 border-neutral-300 space-y-5 ">
+        {/* bus info, routes */}
         <div className="space-y-5 w-full border-b border-neutral-300/60 pb-4">
           {/* Route */}
-          <div className="space-y-0">
+          <div className="space-y-5">
             {/* Bus info */}
             <div className="w-full flex items-center justify-between">
               <div className="flex items-center gap-x-2">
@@ -96,9 +97,15 @@ const TicketCard = ({
               /per seat
             </span>
           </h1>
+          <h1 className="text-sm text-neutral-600 font-normal flex items-center justify-center gap-x-1.5">
+            <span className="text-lg text-green-700 font-bold pt-0.5  ">
+              {availableSeats}
+            </span>{" "}
+            seats available
+          </h1>
           <Link
             to="/bus-tickets"
-            className="w-fit px-1.5 h-full py- bg-red-500 hover:bg-transparent border-2 border-red-500 hover:border-primary rounded-xl text-sm font-normal text-neutral-50 flex items-center justify-center gap-x-2 hover:text-primary ease-in-out duration-300  "
+            className="w-fit px-1.5 h-full py- bg-red-500 hover:bg-transparent border-2 border-red-500 hover:border-primary rounded-xl text-sm font-normal text-neutral-50 flex items-center justify-center gap-x-2 hover:text-red-500 ease-in-out duration-300  "
           >
             Reserve Seat
           </Link>

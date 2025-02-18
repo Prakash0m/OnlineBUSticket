@@ -6,6 +6,7 @@ import RootLayout from "../../layout/RootLayout";
 import { motion } from "framer-motion";
 import { Search } from "./search/Search";
 import Filter from "./Filter";
+import SearchResult from "./SearchResult";
 
 const Tickets = () => {
   return (
@@ -36,6 +37,7 @@ const Tickets = () => {
             <Filter className="space-y-4 sticky top-52 z-20" />
           </div>
           {/* Search Section */}
+          <SearchResult />
         </div>
       </RootLayout>
     </div>
